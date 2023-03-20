@@ -1,11 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { HomeTemp } from "../component/AddDDay/Template/HomeTemp";
 
 export function Home() {
-  const { worker } = require("../mocks/browser");
-
-  useEffect(() => {
-    worker.start();
-  }, []);
-
-  return <div>{"Home"}</div>;
+  return <HomeTemp />;
 }

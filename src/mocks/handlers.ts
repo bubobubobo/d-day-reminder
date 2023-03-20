@@ -1,4 +1,4 @@
-import { rest } from "msw";
+import {rest} from "msw";
 
 type TDDay = {
   id: string;
