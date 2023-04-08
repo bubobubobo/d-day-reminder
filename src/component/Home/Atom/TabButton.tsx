@@ -1,5 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
+import { theme } from "../../../styles";
 
 type TTabButtonProps = {
   selected: boolean;
@@ -19,9 +20,9 @@ const buttonCss = (selected: boolean) => css`
   display: inline-block;
   width: 100px;
   font-size: 12px;
-  background-color: #ffffff;
+  background-color: ${theme.color.white};
   border-radius: initial;
-  border-bottom: 2px solid ${selected ? "#000000" : "#ffffff"};
+  border-bottom: 2px solid ${selected ? theme.color.black : theme.color.white};
   line-height: 2.5em;
   text-align: center;
   cursor: pointer;

@@ -1,6 +1,6 @@
 import "./styles/global.css";
 import { ThemeProvider } from "@emotion/react";
-import { theme } from "./styles/theme";
+import { theme } from "./styles";
 import { MainRouter } from "./router/MainRouter";
 import { RecoilRoot } from "recoil";
 

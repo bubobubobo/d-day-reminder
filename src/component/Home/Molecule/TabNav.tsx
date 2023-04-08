@@ -1,9 +1,9 @@
 import React from "react";
 import { css } from "@emotion/react";
-import { TabButton } from "../Atom/TabButton";
-import { HOME_CATEGORIES } from "../../../utils/constants";
-import { homeCategoryState, THomeCategory } from "../../../recoil/homeCategory";
 import { useRecoilState } from "recoil";
+import { TabButton } from "../Atom/TabButton";
+import { HOME_CATEGORIES, HOME_NAV_HEIGHT } from "../../../utils/constants";
+import { homeCategoryState, THomeCategory } from "../../../recoil/homeCategory";
 
 type TTabNavProps = {};
 
@@ -32,6 +32,7 @@ export function TabNav({}: TTabNavProps) {
 
 const tabNavCss = css`
   width: 100%;
+  height: ${HOME_NAV_HEIGHT}px;
   display: flex;
   flex-flow: row;
   align-items: center;
