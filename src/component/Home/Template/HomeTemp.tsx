@@ -1,11 +1,15 @@
 import React from "react";
-import { Header } from "../Molecule/Header";
 import { css } from "@emotion/react";
+import { Header } from "../Molecule/Header";
+import { TabNav } from "../Molecule/TabNav";
 
-export function HomeTemp() {
+type THomeTempProps = {};
+
+export function HomeTemp({}: THomeTempProps) {
   return (
     <div css={header}>
       <Header />
+      <TabNav />
     </div>
   );
 }
